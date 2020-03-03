@@ -1,0 +1,20 @@
+version: "3"
+networks:
+  app-tier:
+    driver: bridge
+services:
+  web:
+    tty: true
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/var/www/docker
+    working_dir: /var/www/docker
+    command: "bash entrypoint.sh"
+    ports:
+      - 3000:80
+      - 3035:3035
+    networks:
+      - app-tier
