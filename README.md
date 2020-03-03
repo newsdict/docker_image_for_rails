@@ -1,24 +1,7 @@
-# README
+# Document
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://newsdict.blog/2020/03/docker-compose%e3%81%a7rails%e7%92%b0%e5%a2%83%e3%82%92%e6%a7%8b%e7%af%89%e3%81%99%e3%82%8b/
 
-Things you may want to cover:
+## Rails version
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rails 6.0.2.1
