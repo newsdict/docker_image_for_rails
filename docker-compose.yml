@@ -10,9 +10,10 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./:/var/www/docker
-    working_dir: /var/www/docker
-    command: "bash entrypoint.sh"
+      - ./:/app
+      - ./entrypoint.dev.sh:/app/entrypoint.dev.sh
+    working_dir: /app
+    command: "bash entrypoint.dev.sh"
     ports:
       - 3000:80
       - 3035:3035
